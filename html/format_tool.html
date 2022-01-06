@@ -1,5 +1,36 @@
 <html>
-    <body>
-        <div>格式化工具</div>
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Tiny tools</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Loading Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Loading Flat UI -->
+    <link href="../css/flat-ui.min.css" rel="stylesheet" />
+    <link href="../css/common.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="img/favicon.ico" />
+  </head>
+
+  <body>
+    <div class="content">
+      <p>
+        <label>待格式化</label>
+        <input type="text" class="text" id="raw_json_input" name="datetime_o" style="height: 400px; width: 300px;"/>
+        <button id="json_format" type="button">
+          格式化 <i class="fas fa-angle-double-right"></i>
+        </button>
+        <input
+          type="text"
+          class="text"
+          id="format_json_output"
+          name="timestamp_o"  style="height: 400px; width: 300px;"
+        />
+      </p>
+    </div>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/json_format.js"></script>
+  </body>
 </html>
